@@ -10,6 +10,6 @@
   "license": "ISC",
   "_id": "electron-bot@1.0.0",
   "devDependencies": {
-    "electron": "^13.1.2"
+    "electron": "13.1.2"
   }
 }
