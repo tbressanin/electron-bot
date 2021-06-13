@@ -11,5 +11,5 @@ app.on("ready", async () => {
 
 	await win.loadFile(indexHTML);	
 
-	win.setBounds({ width: 600, height: 300 });
+	win.setBounds({ width: 600, height: 320 });
 });
