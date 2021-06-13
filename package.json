@@ -1,17 +1,19 @@
 {
-  "name": "electron-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "out/main.js",
-  "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc && cp src/index.html build",
-    "start": "npm run compile"
-  },
-  "author": "",
-  "license": "ISC",
-  "_id": "electron-bot@1.0.0",
-  "devDependencies": {
-    "electron": "13.1.2"
-  }
+	"name": "electron-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "out/main.js",
+	"scripts": {
+		"compile": "tsc && cp src/index.html out",
+		"lint:fix": "eslint src --max-warnings=0 --fix",
+		"lint": "eslint src --max-warnings=0",
+		"start": "npm run compile",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"_id": "electron-bot@1.0.0",
+	"devDependencies": {
+		"electron": "13.1.2"
+	}
 }
