@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "out/main.js",
 	"scripts": {
-		"compile": "tsc && cp src/index.html out",
+		"prestart": "rm -Rf /out",
+		"compile": "tsc && cp -R src/templates/* out/",
 		"lint:fix": "eslint src --max-warnings=0 --fix",
 		"lint": "eslint src --max-warnings=0",
 		"start": "npm run compile",
