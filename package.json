@@ -5,10 +5,10 @@
 	"main": "out/main.js",
 	"scripts": {
 		"prestart": "rm -Rf /out",
-		"compile": "tsc && cp -R src/templates/* out/",
+		"copy": "cp -R src/assets out/",
+		"compile": "tsc -p tsconfig.json && npm run copy",
 		"lint:fix": "eslint src --max-warnings=0 --fix",
 		"lint": "eslint src --max-warnings=0",
-		"start": "npm run compile",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
@@ -16,5 +16,8 @@
 	"_id": "electron-bot@1.0.0",
 	"devDependencies": {
 		"electron": "13.1.2"
+	},
+	"dependencies": {
+		"electron-reload": "^1.5.0"
 	}
 }
